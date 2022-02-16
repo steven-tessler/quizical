@@ -28,14 +28,13 @@ button {
 
 main {
   max-width: 1200px;
-  min-width: 600px;
   padding-right: 40px;
 }
 .container {
   /* border: 2px solid black; */
   border-bottom: 0.79px solid hsla(231, 42%, 90%, 1);
   margin: 0px auto;
-  padding: 20px 0px 20px 20px;
+  padding: 20px 20px 20px 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;

@@ -3,17 +3,12 @@
   "homepage": "https://steven-tessler.github.io/",
   "version": "1.0.0",
   "source": "src/index.html",
-  "targets": {
-	"default": {
-		"distDir": "./build"
-	}
-  },
   "browserslist": [
     "since 2017-06"
   ],
   "scripts": {
   "predeploy": "npm run build",
-  "deploy": "gh-pages -b -d build",
+  "deploy": "gh-pages -d build",
     "start": "parcel src/index.html",
     "build": "parcel build src/index.html "
   },

@@ -27,8 +27,8 @@ button {
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Karla:wght@300;400;500;600;700&display=swap");
 
 main {
-  max-width: 1200px;
-  padding-right: 40px;
+  padding-right: 0;
+  margin: 0 0;
 }
 .container {
   /* border: 2px solid black; */
@@ -41,7 +41,7 @@ main {
 }
 
 .wrapper {
-  margin: 0 40px;
+  margin: 0;
 }
 
 .landing {
@@ -52,8 +52,8 @@ main {
   height: 100vh;
   color: hsl(230, 34%, 46%);
 }
-.landing--heading,
-.loading-text {
+.landing_-heading,
+.loading--heading {
   font-size: 2rem;
   line-height: 2.1rem;
   font-weight: 700;
@@ -72,7 +72,6 @@ main {
 .loading {
   display: grid;
   place-items: center;
-  color: green;
   font-size: 25px;
   height: 500px;
   color: hsl(230, 34%, 46%);
@@ -176,5 +175,24 @@ main {
   border: 0.79px solid hsla(230, 34%, 46%, 1);
   border-radius: 5px;
   padding: 10px 10px;
-  min-width: 35px;
+  height: 35px;
+}
+
+@media screen and (max-width: 400px) {
+  main {
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+  }
+  .wrapper {
+  }
+  .landing {
+    width: 100vw;
+    margin: 0 auto;
+    margin-left: 0px;
+  }
+  .quiz-completed {
+    padding: 20px 20px 20px 20px;
+  }
 }
